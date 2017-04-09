@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log4jConfiguration>
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+			<param name="Target" value="System.out"/>
+			<layout class="org.apache.log4j.EnhancedPatternLayout">
+			<param name="ConversionPattern" value="%-5p [%c] [XX{msisdn}] %t %m%n"/>
+			</layout>
+		
+	</appender>
+		
+		<logger name="org.hibernate.SQL" level="INFO" />
+		<logger name="org.eclipse.jetty.webapp.WebAppClassLoader" level="INFO" />
+		<logger name="sisconfe.controller" level="INFO" />
+		<logger name="com.events.log.RequestLogFilter" level="INFO" />
+		<logger name="com.events.log.SessionListener" level="INFO" />
+		<logger name="com.springframework.web" level="trace" />
+		<root level="INFO">
+			<appender-ref ref="console" />
+		</root>
+</log4jConfiguration>

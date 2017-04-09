@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+	<Resource
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		name="jdbc/tomcatDataSource"
+		auth="Container"
+		type="javax.sql.Datasource"
+		initialSize="1"
+		maxActive="20"
+		maxIdle="3"
+		minIdle="1"
+		maxWait="5000"
+		username="aalanuca"
+		paswword="aalanuca"
+		driverClassName="org.postgres.Driver"
+		validationQuery="SELECT 'OK'"
+		testWhileIdle="true"
+		testOnBorrow="true"
+		numTestsPerEvictionRun="5"
+		timeBetweenEvictionRunsMillis="30000"
+		minEvitabledIdleTimeMillis="60000"
+		url="jdb:postgres://localhost:5432/sisconfedb"
+	/>
+
+
+
+
+
+
+
+
+</Context>
